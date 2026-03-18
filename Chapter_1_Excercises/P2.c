@@ -11,6 +11,11 @@ int main(){
             sum=sum+i;
         }
     }
+    //more efficient by skipping odd numbers
+    //for (int i = 2; i <= 200; i += 2) {
+    //c++;
+    //sum += i;
+    //}
     printf("Count of even numbers between 1 - 200 is  %d\n",c);
     printf("Sum of even numbers between 1 - 200 is %d\n ", sum);
 }
