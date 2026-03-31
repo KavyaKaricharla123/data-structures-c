@@ -19,17 +19,25 @@ struct node* insert_end(struct node *head){
     printf("\nEnter the newnode data:");
     scanf("%d",&newnode->data);
     temp = head;
-    while(temp->next != NULL){
+    if(head ==NULL){
+        head = newnode;
+        newnode->next = NULL;
+    }
+    else{
+        while(temp->next != NULL){
         temp = temp->next;
     }
     temp->next = newnode;
     newnode->next = NULL;
+
+    }
+    
     return head; 
 }
 
 
 int main(){
-    struct node *newnode, *temp=NULL,*head;
+    struct node *newnode, *temp=NULL,*head= NULL;
     int n;
     printf("Enter the number of nodes:");
     scanf("%d",&n);
