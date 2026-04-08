@@ -24,7 +24,7 @@ struct node* delete_position(struct node* head, int pos){
         head = head->next;
         return head;  
     }
-    //other position check
+    //other position checkiax2kor   
     int c = 0;
     while(curr != NULL && c<pos-1){
         curr = curr->next;
