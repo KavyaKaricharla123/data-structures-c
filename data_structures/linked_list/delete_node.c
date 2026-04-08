@@ -60,7 +60,6 @@ int main(){
             temp = newnode;
             
         }
-        
     }
    print_list(head);
    int val;
