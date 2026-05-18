@@ -1,0 +1,1 @@
+Since I like to use pointers, writing programs using pointers.
